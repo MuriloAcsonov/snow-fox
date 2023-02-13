@@ -1,0 +1,25 @@
+{   
+    "nome": "Alan Bido",
+    "cpf": "15015022211",
+    "dataNascimento": "1975-12-31",
+    "login": {
+        "tipo": 0,
+        "email": "alanbido@hotmail.com",
+        "senha": "senhaAlanBida"
+    },
+    "telefones": [{
+        "telefoneId": 1,
+        "numero": "1141128922",
+        "principal": true
+    }],
+    "enderecos": [{
+        "enderecoId": 1,
+        "logradouro": "Rua Timas Turbo",
+        "numero": "140a",
+        "complemento": "",
+        "cidade": "Rolandia",
+        "estado": "SP",
+        "cep": "03165021",
+        "principal": true
+    }]
+}

@@ -1,0 +1,23 @@
+{   
+    "nome": "Alan Bida",
+    "cpf": "15015022211",
+    "dataNascimento": "2020-12-31",
+    "login": {
+        "tipo": 0,
+        "email": "alanbida@hotmail.com",
+        "senha": "senhaAlanBida"
+    },
+    "telefones": [{
+        "numero": "1141128922",
+        "principal": true
+    }],
+    "enderecos": [{
+        "logradouro": "Rua Timas Turbo",
+        "numero": "140a",
+        "complemento": "",
+        "cidade": "Rolandia",
+        "estado": "SP",
+        "cep": "03165021",
+        "principal": true
+    }]
+}

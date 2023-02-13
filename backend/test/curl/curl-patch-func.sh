@@ -1,0 +1,1 @@
+curl -d @data-patch-func.json -H "Content-Type: application/json" -XPATCH 127.0.0.1:3000/v1/funcionario/28
