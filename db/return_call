@@ -1,0 +1,18 @@
+[
+  [
+    {
+      Id: 3,
+      Email: 'jahleemrabei@hotmail.com',
+      Numero: '940028922',
+      Nome: 'Jha Leem Rabei'
+    }
+  ],
+  ResultSetHeader {
+    fieldCount: 0,
+    affectedRows: 0,
+    insertId: 0,
+    info: '',
+    serverStatus: 35,
+    warningStatus: 0
+  }
+]
