@@ -16,11 +16,11 @@ export class FuncionarioController {
     try{
       retorno = await this.funcionarioService.create(funcionarioDto);
       this.logger.log(`Route POST - status: ${HttpStatus.OK}`);
-      res.status(HttpStatus.CREATED).json(JSON.stringify(retorno))
+      res.status(HttpStatus.CREATED).json(JSON.stringify(retorno));
     }
     catch(error){
       this.logger.log(`Route POST - status: ${HttpStatus.BAD_REQUEST}`);
-      res.status(HttpStatus.BAD_REQUEST).json(JSON.stringify(error))
+      res.status(HttpStatus.BAD_REQUEST).json(JSON.stringify(error));
     }
 
     return retorno;

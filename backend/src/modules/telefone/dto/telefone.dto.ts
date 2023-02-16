@@ -14,3 +14,18 @@ export class telefoneDto {
   principal: boolean;
 
 }
+
+export class telefoneGetDto {
+  @IsOptional()
+  fkId: number;
+  
+  @IsOptional()
+  telefoneId: number;
+
+  @IsOptional()
+  numero: string;
+
+  @IsOptional()
+  principal: boolean;
+
+}

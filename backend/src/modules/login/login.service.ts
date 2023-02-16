@@ -34,4 +34,41 @@ export class LoginService {
     
   }
 
+  async verify(login: Login){
+    let connection = await poolPromise.getConnection();
+    try {
+      this.logger.debug(`Verificar - login`);
+      const result = await this.loginRepo.verificar(login, connection);
+      return result;
+
+    }
+    catch(error){
+      this.logger.error(`Error - verificar login`);      
+      this.logger.error(`Error - ${error}`);
+    }
+    finally{
+      this.logger.log(`Verificar - Release connection`);
+      await connection.release();
+    }    
+  }
+
+  async forget(login: Login){
+    let connection = await poolPromise.getConnection();
+    try {
+      this.logger.debug(`Login - esquecer senha`);
+      const result = await this.loginRepo.esquecer(login, connection);
+      return result;
+
+    }
+    catch(error){
+      this.logger.error(`Error - esquecer senha login`);      
+      this.logger.error(`Error - ${error}`);
+    }
+    finally{
+      this.logger.log(`Esquecer Senha - Release connection`);
+      await connection.release();
+    }
+    
+  }
+
 }

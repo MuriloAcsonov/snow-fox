@@ -6,6 +6,6 @@ import { LoginRepository } from './login.repository';
 @Module({
   controllers: [LoginController],
   providers: [LoginService, LoginRepository],
-  imports: [LoginRepository]
+  exports: [LoginRepository]
 })
 export class LoginModule {}
